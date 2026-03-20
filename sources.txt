@@ -1,0 +1,58 @@
+- neuralnice discord bot tutorial:
+- playlist (paradoxial): https://www.youtube.com/playlist?list=PLwqYQaS6jxfk_NCetUOyNRDGAf9_kU90n
+- playlist (thenewboston): https://www.youtube.com/playlist?list=PL6gx4Cwl9DGAHdJdtEl0-XiRfPRAvpbSz
+- some features inspired by (pixegami): https://www.youtube.com/watch?v=2k9x0s3awss
+- discord.py documentation: https://discordpy.readthedocs.io/en/latest/
+- discord.py examples repository: https://github.com/Rapptz/discord.py/tree/master/examples
+- adding buttons, views (Code With Swastik): https://www.youtube.com/watch?v=kNUuYEWGOxA
+- adding embeds (thenewboston): https://www.youtube.com/watch?v=XzcJ4p0R6NY
+- Pagination (Richard Schwabe): https://www.youtube.com/watch?v=PRC4Ev5TJwc
+- python string methods (str.split): https://docs.python.org/3/library/stdtypes.html?highlight=str#str
+- this answer explaining difference between on_message_edit and on_raw_message_edit: https://stackoverflow.com/a/69805853/14989075
+- quiz questions on cetateans: https://www.funtrivia.com/trivia-quiz/Animals/Cetaceans-Whales-dolphins-and-porpoises-355297.html
+- making hybrid commands (Richard Schwabe): https://www.youtube.com/watch?v=ynD_dffUzrg
+- using HelpCommand class for creating custom help command (Lucas): https://www.youtube.com/watch?v=6-SawgAtiro
+- help command design (paradoxial): https://youtu.be/6qupDORLQwo
+
+problems
+- using commands and events both:
+    - https://stackoverflow.com/questions/53705633/how-to-use-discord-bot-commands-and-event-both/
+    - https://stackoverflow.com/questions/49331096/why-does-on-message-stop-commands-from-working?
+- Discord.py - How to make a role specific command?
+    - https://stackoverflow.com/questions/49351509/discord-py-how-to-make-a-role-specific-command
+- hosting on pythonanywhere.com error:
+    - https://stackoverflow.com/questions/61229697/clientconnectorerror-cannot-connect-to-host-discordapp-com443-ssldefault-con
+- lambda in a loop duplication issue:
+    - https://stackoverflow.com/questions/19837486/lambda-in-a-loop
+- cant send ephemeral message:
+    - https://stackoverflow.com/questions/69074937/how-would-i-send-an-ephemeral-message-in-discord-py
+- sending hyperlinks:
+    - https://stackoverflow.com/questions/64527464/clickable-link-inside-message-discord-py
+- sending custom emojis:
+    - https://stackoverflow.com/questions/51982806/how-do-i-make-my-discord-py-bot-use-custom-emoji
+- should i commit .gitignore:
+    - https://stackoverflow.com/questions/21600439/should-i-commit-gitignore-file
+- ensuring button is pressed by original author:
+    - https://stackoverflow.com/a/75691738/14989075
+- fix indentation of multiline strings:
+    - https://stackoverflow.com/questions/2504411/proper-indentation-for-multiline-strings
+
+plans
+- [x] command to send custom embeds with ease
+    - post command created
+- [x] categories for quiz
+- [x] customised help commands (cuz rn they look really ugly)
+- [ ] explore group command
+- [ ] custom changing status (Code with Swastik): https://www.youtube.com/watch?v=xNTV5DVhxxk&list=PLoFvxwcEPSPhCNdel2XcNgbgmntp4E-CE&index=7
+- [-] figure out how to send ephemeral messages
+    - only works with contexts that have interaction
+- [ ] Extensions: https://discordpy.readthedocs.io/en/latest/ext/commands/extensions.html#ext-commands-extensions
+
+improvements
+- [-] improve design: use one view in quiz command instead of making a new view for very question
+    - Looks not possible
+- [x] improve design: for making post embed, use make_embed followed by add_field (in loop) instead of for loop followed by make_embed (extra looping hurts perfomance)
+- [x] improve help: make help command a hybrid command
+- [x] improve help: figure out a way to change brief and help attributes of help command
+- [ ] improve post: attempt to make post accessible via slash commands, for ease of use
+- [x] improve post: allow posts to contain no title or description/name or value
